@@ -1,0 +1,24 @@
+OLD (area focused):
+
+timing:
+
+Slack -17.96
+tns -2593.43
+wns -17.96
+
+Area:
+
+225955.459200
+
+
+New (timing focused):
+
+timing:
+
+Slack -5.36
+tns -356.06
+wns -5.36
+
+Area:
+
+225955.459200
