@@ -95,9 +95,18 @@ _ngspice_ point and click GUI is helpful  in estimation of capacitive dependant 
 
 <img src="Images/Day_3/2%20-%20Sky130%20spice/4%20-%20ngspice%20fall%20delay.png" width= "800" height= "600">
 
-<img src="Images/Day_3/2%20-%20Sky130%20spice/4%20-%20ngspice%20RT%20and%20FT.png" width= "800" height= "600">
+<img src="Images/Day_3/2%20-%20Sky130%20spice/4%20-%20ngspice%20RT%20and%20FT.png" width= "800">
+
+The reliability of obtained spice data will rely on the quality of the PDK files. 130nm technology is quite mature CMOS process, however only recently it was adapted to open source design flow. As a result, open source version of SKY130 is still missing some features of complete commercial version. Open source DRC library is not complete, but open source tools are avaialbe to manually update it, especially because official rules were made public by [Skywater](https://skywater-pdk.readthedocs.io/en/latest/index.html).
+
+As an exercise, some of the DRC were left out intentionally, so users can practice manually adjusting DRC library configuration file. For example on pictures below, the distance between polys and diffusion layers should be flagged by DRC as it is shorter than required, but it was not. Manually adjusting this rule (poly.9 for alldiff) resulted in proper DRC violation flag on the layout view.
 
 
+<img src="Images/Day_3/3%20-%20Magic%20layout/1%20-%20poly%20rule%209.png" width= "800" height= "600">
+
+<img src="Images/Day_3/3%20-%20Magic%20layout/2%20-%20fixed%20poly%20rule%209.png" width= "800" height= "600">
+
+<img src="Images/Day_3/3%20-%20Magic%20layout/2%20-%20fixed%20poly%20rule%209%20with%20alldiff.png" width= "800" height= "600">
 
 ## Day 4
 
