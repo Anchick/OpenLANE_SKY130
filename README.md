@@ -31,6 +31,35 @@ During the synthesis run it can be observed how the cell architecture is automat
 
 
 ## Day 2
+The focus of this day was on floorplan and placement steps of the flow. 
+
+Florrplan stage is required to place pins and non-standart cells on an area of a die.
+
+`run_floorplan` is a command to run this stage. Additional switches can be used to customize the floorplan strategy, such as pin allocation.
+
+Figure below shows the finished floorplan run with default configurations.
+
+<img src="Images/Day_2/florrplan/1%20-%20floorplan%20default.png" width= "800" height= "600">
+
+Floorplan generates a def file, fragment of which is shown below.
+
+<img src="Images/Day_2/florrplan/2%20-%20floorplan%20def%20file.png" width= "800" height= "600">
+
+Generated def file allocates mentioned die elements on a grid. Generated configuration can be visualized with _magic_ as a layout. It requires a PDK ***tech*** file, a cell ***lef*** file and a ***def*** file of a floorplan.
+
+<img src="Images/Day_2/florrplan/3%20-%20magic%20layout.png" width= "800" height= "600">
+
+Zoomed in view shows placed pin and decoupling capacitors (non standart cell).
+
+<img src="Images/Day_2/florrplan/4%20-%20magic%20layout%20zoomed%20in.png" width= "800" height= "600">
+
+The next step is to allocate standard cells by running `run_placement` command. Similiar to a floorplan, the placement run can be customized with additional swithces if neeeded.
+
+A finished placement run with default confogurations and generated magic layout shown below.
+
+<img src="Images/Day_2/Library%20and%20placement/1%20-%20placement%20run.png" width= "800" height= "600">
+
+<img src="Images/Day_2/Library%20and%20placement/2%20-%20layout%20after%20placement%20run.png" width= "800" height= "600">
 
 ## Day 3
 
