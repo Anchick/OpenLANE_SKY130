@@ -172,3 +172,12 @@ The last day focused on power distribution network generation and routing.
 
 <img src="Images/Day_5/2%20-%20Power%20distibution%20network/1%20-%20generated%20PDN.png" width= "800" height= "600">
 
+Next step is routing. As many other generation options, there are several routing synthesis options available for the `run_routing`. Typically, routing steps takes a lot of time, but depending on a selected routing strategy, the routing synthesis time or memory overhead could be minimized, in exchange for a final DRC legallity.
+
+<img src="Images/Day_5/2%20-%20Power%20distibution%20network/2%20-%20completed%20routing.png" width= "800" height= "600">
+
+<img src="Images/Day_5/2%20-%20Power%20distibution%20network/3%20-%20DRC%20routing%20violations.png" width= "800" height= "600">
+
+Once routing is finished, we can extract final SPEF file.
+
+<img src="Images/Day_5/2%20-%20Power%20distibution%20network/4%20-%20SPEF%20file%20creation.png" width= "800" height= "600">
