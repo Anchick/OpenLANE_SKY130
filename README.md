@@ -9,7 +9,7 @@ For OpenLANE/SKY130 workshop 2021
 11
 111
 ```
-<img src="Images/Day_1/1.png" width= "1920" height= "1080">
+<img src="Images/Day_1/1.png" width= "800" height= "600">
 
 
 
