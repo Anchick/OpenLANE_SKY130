@@ -33,7 +33,7 @@ During the synthesis run it can be observed how the cell architecture is automat
 ## Day 2
 The focus of this day was on floorplan and placement steps of the flow. 
 
-Florrplan stage is required to place pins and non-standart cells on an area of a die.
+Floorplan stage is required to place pins and non-standart cells on an area of a die.
 
 `run_floorplan` is a command to run this stage. Additional switches can be used to customize the floorplan strategy, such as pin allocation.
 
@@ -62,6 +62,42 @@ A finished placement run with default confogurations and generated magic layout 
 <img src="Images/Day_2/Library%20and%20placement/2%20-%20layout%20after%20placement%20run.png" width= "800" height= "600">
 
 ## Day 3
+
+Focus of this day is on a custom cell layout and characterization.
+
+_magic_ is a robust tool for layout visualization, design and characterization. For example, it allows to highlight the placed pins on a die, which were generted with custom floorplan configuration.
+
+<img src="Images/Day_3/1%20-%20ngspice%20inv/1%20-%20aldered%20pin%20distance%20on%20a%20layout.png" width= "800" height= "600">
+
+Moreover, this tool allows to characterize custom cells. Example bellow shows layout of the custom CMOS inverter layout. 
+
+<img src="Images/Day_3/1%20-%20ngspice%20inv/2%20-%20inv%20layout%20in%20magic.png" width= "800" height= "600">
+
+Some basic commands in _magic_ simplifies the operation and characterization of layout components. `what` _magic_ command is used to describe selected layout component, such as nmos.
+
+<img src="Images/Day_3/1%20-%20ngspice%20inv/3%20-%20inv%20layout%20in%20magic%20what%20nmos.png" width= "800" height= "600">
+
+One of the main features of the _magic_ is a layout parasitics extractions as a ***spice*** file.
+
+<img src="Images/Day_3/1%20-%20ngspice%20inv/4%20-%20extracted%20spice%20file.png" width= "800" height= "600">
+
+_ngspice_ is a circuit simulation tool, which can characterize electrical circuits in ***spice***, so it is a usefull tool to study the parasitics introduced by the layout imperfections. 
+
+<img src="Images/Day_3/2%20-%20Sky130%20spice/1%20-%20ngspice%20file%20sim.png" width= "800" height= "600">
+
+Extracted from layout spice file shows numerous sources of parasitic capacitances, so the timing performance of the inverter could be compromised. Capacitive effects could be characterized using transient analysis in spice with _ngspice_.
+
+<img src="Images/Day_3/2%20-%20Sky130%20spice/2%20-%20ngspice%20tran%20output.png" width= "800" height= "600">
+
+_ngspice_ point and click GUI is helpful  in estimation of capacitive dependant characteristics, such as delays, rising and falling times.
+
+<img src="Images/Day_3/2%20-%20Sky130%20spice/3%20-%20ngspice%20timing%20char.png" width= "800" height= "600">
+
+<img src="Images/Day_3/2%20-%20Sky130%20spice/4%20-%20ngspice%20fall%20delay.png" width= "800" height= "600">
+
+<img src="Images/Day_3/2%20-%20Sky130%20spice/4%20-%20ngspice%20RT%20and%20FT.png" width= "800" height= "600">
+
+
 
 ## Day 4
 
