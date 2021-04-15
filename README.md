@@ -181,3 +181,9 @@ Next step is routing. As many other generation options, there are several routin
 Once routing is finished, we can extract final SPEF file.
 
 <img src="Images/Day_5/2%20-%20Power%20distibution%20network/4%20-%20SPEF%20file%20creation.png" width= "800" height= "600">
+
+
+## Acknowledgment
+
+Kunal Ghosh, Co-founder (VSD Corp)
+Nickson Jose, Lecturer
